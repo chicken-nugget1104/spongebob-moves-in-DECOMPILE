@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C768A739-4082-4BCE-9AB7-E52DC7D7C221}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp-firstpass</RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarseerPhysics">
+      <HintPath>..\..\utin\assets\bin\Data\Managed\FarseerPhysics.dll</HintPath>
+    </Reference>
+    <Reference Include="P31RestKit">
+      <HintPath>..\..\utin\assets\bin\Data\Managed\P31RestKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\utin\assets\bin\Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\utin\assets\bin\Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\utin\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AGSAchievement.cs" />
+    <Compile Include="AGSAchievementsClient.cs" />
+    <Compile Include="AGSClient.cs" />
+    <Compile Include="AGSGameDataMap.cs" />
+    <Compile Include="AGSLatestStringList.cs" />
+    <Compile Include="AGSLeaderboard.cs" />
+    <Compile Include="AGSLeaderboardsClient.cs" />
+    <Compile Include="AGSProfile.cs" />
+    <Compile Include="AGSProfilesClient.cs" />
+    <Compile Include="AGSScore.cs" />
+    <Compile Include="AGSSyncable.cs" />
+    <Compile Include="AGSSyncableAccumulatingNumber.cs" />
+    <Compile Include="AGSSyncableElement.cs" />
+    <Compile Include="AGSSyncableList.cs" />
+    <Compile Include="AGSSyncableNumber.cs" />
+    <Compile Include="AGSSyncableNumberElement.cs" />
+    <Compile Include="AGSSyncableNumberList.cs" />
+    <Compile Include="AGSSyncableString.cs" />
+    <Compile Include="AGSSyncableStringElement.cs" />
+    <Compile Include="AGSSyncableStringList.cs" />
+    <Compile Include="AGSSyncableStringSet.cs" />
+    <Compile Include="AGSWhispersyncClient.cs" />
+    <Compile Include="AmazonCommon\MiniJSON.cs" />
+    <Compile Include="AmazonCommon\MiniJsonExtensions.cs" />
+    <Compile Include="AmazonGameCircleExample.cs" />
+    <Compile Include="AmazonGameCircleExampleAchievements.cs" />
+    <Compile Include="AmazonGameCircleExampleBase.cs" />
+    <Compile Include="AmazonGameCircleExampleGUIHelpers.cs" />
+    <Compile Include="AmazonGameCircleExampleInitialization.cs" />
+    <Compile Include="AmazonGameCircleExampleLeaderboards.cs" />
+    <Compile Include="AmazonGameCircleExampleProfiles.cs" />
+    <Compile Include="AmazonGameCircleExampleWhispersync.cs" />
+    <Compile Include="AmazonGameCircleExampleWSAccumulatingNumber.cs" />
+    <Compile Include="AmazonGameCircleExampleWSHashSet.cs" />
+    <Compile Include="AmazonGameCircleExampleWSHashSets.cs" />
+    <Compile Include="AmazonGameCircleExampleWSNumberList.cs" />
+    <Compile Include="AmazonGameCircleExampleWSNumberListElementCache.cs" />
+    <Compile Include="AmazonGameCircleExampleWSSyncableNumber.cs" />
+    <Compile Include="AmazonJavaWrapper.cs" />
+    <Compile Include="AmazonLogging.cs" />
+    <Compile Include="AveragedGestureRecognizer.cs" />
+    <Compile Include="BaseButton.cs" />
+    <Compile Include="CodeProfiler.cs" />
+    <Compile Include="CommonUtils.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\AmazonException.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\AmazonIapV2Impl.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\AmazonLogger.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\AmazonUserData.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetProductDataResponse.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetProductDataResponseDelegate.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetProductDataResponseDelegator.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetPurchaseUpdatesResponse.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetPurchaseUpdatesResponseDelegate.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetPurchaseUpdatesResponseDelegator.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetUserDataResponse.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetUserDataResponseDelegate.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\GetUserDataResponseDelegator.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\IAmazonIapV2.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\IDelegator.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\Jsonable.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\json\Json.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\log\AmazonLogging.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\NotifyFulfillmentInput.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\ProductData.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\PurchaseReceipt.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\PurchaseResponse.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\PurchaseResponseDelegate.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\PurchaseResponseDelegator.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\RequestOutput.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\ResetInput.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\SkuInput.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\SkusInput.cs" />
+    <Compile Include="com\amazon\device\iap\cpt\SubscriptionExpiredEvent.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DownButton.cs" />
+    <Compile Include="DragButton.cs" />
+    <Compile Include="DragGestureRecognizer.cs" />
+    <Compile Include="EtceteraAndroid.cs" />
+    <Compile Include="EtceteraAndroidEventListener.cs" />
+    <Compile Include="EtceteraAndroidManager.cs" />
+    <Compile Include="EtceteraUIManager.cs" />
+    <Compile Include="EtceteraUIManagerTwo.cs" />
+    <Compile Include="EventDispatcher.2.cs" />
+    <Compile Include="EventDispatcher.3.cs" />
+    <Compile Include="EventDispatcher.4.cs" />
+    <Compile Include="EventDispatcher.cs" />
+    <Compile Include="FarseerGizmos.cs" />
+    <Compile Include="FarseerPhysics\ListExtenstionMethods.cs" />
+    <Compile Include="FarseerPhysics\RectExtensionMethods.cs" />
+    <Compile Include="FarseerPhysics\VectorExtensionMethods.cs" />
+    <Compile Include="FGComponent.cs" />
+    <Compile Include="FileSystemBundle.cs" />
+    <Compile Include="FileSystemCoordinator.cs" />
+    <Compile Include="FingerGestures.cs" />
+    <Compile Include="FingerGesturesInitializer.cs" />
+    <Compile Include="FingerGesturesPrefabs.cs" />
+    <Compile Include="FingerMotionDetector.cs" />
+    <Compile Include="GameCenterAchievement.cs" />
+    <Compile Include="GameCenterAchievementMetadata.cs" />
+    <Compile Include="GameCenterBinding.cs" />
+    <Compile Include="GameCenterChallenge.cs" />
+    <Compile Include="GameCenterChallengeState.cs" />
+    <Compile Include="GameCenterEventListener.cs" />
+    <Compile Include="GameCenterLeaderboard.cs" />
+    <Compile Include="GameCenterLeaderboardTimeScope.cs" />
+    <Compile Include="GameCenterManager.cs" />
+    <Compile Include="GameCenterPlayer.cs" />
+    <Compile Include="GameCenterRetrieveScoresResult.cs" />
+    <Compile Include="GameCenterScore.cs" />
+    <Compile Include="GameCenterViewControllerState.cs" />
+    <Compile Include="GameCircleManager.cs" />
+    <Compile Include="GameCirclePopupLocation.cs" />
+    <Compile Include="GestureRecognizer.cs" />
+    <Compile Include="GoogleIAB.cs" />
+    <Compile Include="GoogleIABEventListener.cs" />
+    <Compile Include="GoogleIABManager.cs" />
+    <Compile Include="GooglePlayDownloader.cs" />
+    <Compile Include="GooglePurchase.cs" />
+    <Compile Include="GoogleSkuInfo.cs" />
+    <Compile Include="GPGAchievementMetadata.cs" />
+    <Compile Include="GPGLeaderboardMetadata.cs" />
+    <Compile Include="GPGLeaderboardTimeScope.cs" />
+    <Compile Include="GPGManager.cs" />
+    <Compile Include="GPGPlayerInfo.cs" />
+    <Compile Include="GPGScore.cs" />
+    <Compile Include="GPGSEventListener.cs" />
+    <Compile Include="GPGToastPlacement.cs" />
+    <Compile Include="GraphTexture.cs" />
+    <Compile Include="GUIMainView.cs" />
+    <Compile Include="GUISubView.cs" />
+    <Compile Include="GUIView.cs" />
+    <Compile Include="HelloYarg.cs" />
+    <Compile Include="IABUIManager.cs" />
+    <Compile Include="JSON.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LanguageCode.cs" />
+    <Compile Include="LeaderboardScope.cs" />
+    <Compile Include="LocalizationSettings.cs" />
+    <Compile Include="LocalizedAsset.cs" />
+    <Compile Include="LongPressGestureRecognizer.cs" />
+    <Compile Include="MiniJsonExtensions.cs" />
+    <Compile Include="MiniJSON\Json.cs" />
+    <Compile Include="MiniJSON_Prime31.cs" />
+    <Compile Include="MouseGestures.cs" />
+    <Compile Include="MousePinchGestureRecognizer.cs" />
+    <Compile Include="MultiFingerGestureRecognizer.cs" />
+    <Compile Include="MultiTapGestureRecognizer.cs" />
+    <Compile Include="PinchGestureRecognizer.cs" />
+    <Compile Include="PlayGameServices.cs" />
+    <Compile Include="PlayGameServicesUI.cs" />
+    <Compile Include="PlayHaven\MiniJSON.cs" />
+    <Compile Include="PlayHaven\MiniJsonExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadyEventDispatcher.cs" />
+    <Compile Include="RenderTextureBuffer.cs" />
+    <Compile Include="RenderTextureManager.cs" />
+    <Compile Include="RotationGestureRecognizer.cs" />
+    <Compile Include="ScreenAnchor.cs" />
+    <Compile Include="ScrollRegion.cs" />
+    <Compile Include="SpritePivot.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="SwipeGestureRecognizer.cs" />
+    <Compile Include="TapButton.cs" />
+    <Compile Include="TapGestureRecognizer.cs" />
+    <Compile Include="ThreeStateButton.cs" />
+    <Compile Include="ToggleButton.cs" />
+    <Compile Include="TouchScreenGestures.cs" />
+    <Compile Include="TTSQueueMode.cs" />
+    <Compile Include="TwoShadeButton.cs" />
+    <Compile Include="UnityEngine\BoundsExtensions.cs" />
+    <Compile Include="UnityEngine\Easing.cs" />
+    <Compile Include="Upsight.cs" />
+    <Compile Include="UpsightAndroidPurchaseResolution.cs" />
+    <Compile Include="UpsightContentRequest.cs" />
+    <Compile Include="UpsightLogLevel.cs" />
+    <Compile Include="UpsightManager.cs" />
+    <Compile Include="UpsightMonoBehavior.cs" />
+    <Compile Include="UpsightPurchase.cs" />
+    <Compile Include="UpsightReward.cs" />
+    <Compile Include="UVMapTree.cs" />
+    <Compile Include="XMLNode.cs" />
+    <Compile Include="XMLNodeList.cs" />
+    <Compile Include="XMLParser.cs" />
+    <Compile Include="Yarg\AtlasAndCoords.cs" />
+    <Compile Include="Yarg\AtlasCoords.cs" />
+    <Compile Include="Yarg\AtlasMetaData.cs" />
+    <Compile Include="Yarg\FontAtlas.cs" />
+    <Compile Include="Yarg\ILoadable.cs" />
+    <Compile Include="Yarg\ITouchable.cs" />
+    <Compile Include="Yarg\SpriteCoordinates.cs" />
+    <Compile Include="Yarg\TextureAtlas.cs" />
+    <Compile Include="Yarg\YGEvent.cs" />
+    <Compile Include="Yarg\YGEventDispatcher.cs" />
+    <Compile Include="YG2DBody.cs" />
+    <Compile Include="YG2DCapsule.cs" />
+    <Compile Include="YG2DCircle.cs" />
+    <Compile Include="YG2DEllipse.cs" />
+    <Compile Include="YG2DGear.cs" />
+    <Compile Include="YG2DNGon.cs" />
+    <Compile Include="YG2DRectangle.cs" />
+    <Compile Include="YG2DRoundedRectangle.cs" />
+    <Compile Include="YG2DSolidArc.cs" />
+    <Compile Include="YG2DWorld.cs" />
+    <Compile Include="YGAnimatedAtlasSprite.cs" />
+    <Compile Include="YGAnimatedSprite.cs" />
+    <Compile Include="YGAtlasSprite.cs" />
+    <Compile Include="YGFrameAtlasSprite.cs" />
+    <Compile Include="YGFrameSprite.cs" />
+    <Compile Include="YGGraphSprite.cs" />
+    <Compile Include="YGSprite.cs" />
+    <Compile Include="YGTextAtlasSprite.cs" />
+    <Compile Include="YGTextSprite.cs" />
+    <Compile Include="YGTextureLibrary.cs" />
+    <Compile Include="YGTiledSprite.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

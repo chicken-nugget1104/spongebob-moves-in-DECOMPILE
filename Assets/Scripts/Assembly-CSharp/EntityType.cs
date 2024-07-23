@@ -1,0 +1,29 @@
+﻿using System;
+
+// Token: 0x02000418 RID: 1048
+[Flags]
+public enum EntityType
+{
+	// Token: 0x040013E1 RID: 5089
+	INVALID = 0,
+	// Token: 0x040013E2 RID: 5090
+	CORE = 1,
+	// Token: 0x040013E3 RID: 5091
+	RESIDENT = 2,
+	// Token: 0x040013E4 RID: 5092
+	WORKER = 4,
+	// Token: 0x040013E5 RID: 5093
+	DEBRIS = 8,
+	// Token: 0x040013E6 RID: 5094
+	LANDMARK = 16,
+	// Token: 0x040013E7 RID: 5095
+	BUILDING = 32,
+	// Token: 0x040013E8 RID: 5096
+	ANNEX = 64,
+	// Token: 0x040013E9 RID: 5097
+	TREASURE = 128,
+	// Token: 0x040013EA RID: 5098
+	WANDERER = 256,
+	// Token: 0x040013EB RID: 5099
+	COSTUME = 512
+}
